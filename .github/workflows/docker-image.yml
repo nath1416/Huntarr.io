@@ -87,6 +87,8 @@ jobs:
           tags: |
             huntarr/huntarr:dev
             huntarr/huntarr:${{ github.sha }}
+            ghcr.io/${{ github.repository_owner }}/huntarr:dev
+            ghcr.io/${{ github.repository_owner }}/huntarr:${{ github.sha }}
       
       # 7c) Build & Push if it's a tag/release
       - name: Build and Push (release)
